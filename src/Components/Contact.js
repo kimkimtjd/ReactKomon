@@ -18,7 +18,18 @@ const Contactme = styled.ul`
         list-style:none;
         font-size:28px;
         margin:15px;
+      @media all and (min-width:480px) and (max-width:767px) {
+        font-size:20px;
+        }
+      @media all and (max-width:479px) {
+        position: relative;
+        top: -5px;
+        left: 50px;
+        font-size:17px;
+        width:200px;
+        }
     }
+
 `;
 
 //콘텐츠영역
@@ -33,7 +44,6 @@ const Content = styled.div`
   background-color:white;
   box-shadow: 40px 40px 40px red;
 `;
-
 
 //연락 아이콘
 const Contact = styled.button`
@@ -50,6 +60,24 @@ const Contact = styled.button`
     position: absolute;
     top: -20px; 
   }
+  @media all and (min-width:768px) and (max-width:1024px) {
+    position: absolute;
+    top: 0px; 
+    left:680px;
+    font-size:30px;
+  }
+  @media all and (min-width:480px) and (max-width:767px) {
+    position: absolute;
+    top: 0px; 
+    left:620px;
+    font-size:20px;
+    }
+  @media all and (max-width:479px) {
+    position: absolute;
+    top: 0px; 
+    left:610px;
+    font-size:15px;
+    }
 `;
 
 const X = styled.button`
@@ -61,6 +89,22 @@ const X = styled.button`
   font-size:32px;
   font-weight:600;
   cursor:pointer;
+  @media all and (min-width:768px) and (max-width:1024px) {
+    position: absolute;
+    top: 20px; 
+    left:380px;
+  }
+  @media all and (min-width:480px) and (max-width:767px) {
+    position: absolute;
+    top: 20px; 
+    left:280px;
+  }
+  @media all and (max-width:479px) {
+    position: absolute;
+    top:10px; 
+    left:210px;
+    font-size:22px;
+      }
 `;
 
 function Contacts() {
@@ -76,7 +120,7 @@ return (
     <div>
 
     <Content>
-        <Contact onClick={toggleModal}>Contact Me</Contact>
+        <Contact onClick={toggleModal}>Contact</Contact>
     </Content>
 
     {/*Contact Modal*/}

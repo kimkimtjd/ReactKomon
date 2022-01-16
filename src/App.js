@@ -21,6 +21,19 @@ const Intro = styled.p`
   font-weight:400;
   text-align:center;
   color:white;
+  @media all and (min-width:768px) and (max-width:1024px) {
+    font-size:50px;
+    width:500px;
+  }
+  @media all and (min-width:480px) and (max-width:767px) {
+    font-size:40px;
+    width:400px;
+  }
+  @media all and (max-width:479px) {
+    font-size:30px;
+    width:300px;
+  }
+
 `;
 
 //자세히보기 이동
@@ -46,6 +59,15 @@ const Samsung = styled.button`
     color:white;
     border:none;
   }
+  @media all and (min-width:480px) and (max-width:767px) {
+    width: 152px;
+  }
+  @media all and (max-width:479px) {
+    position: absolute;
+    top: 450px; 
+    font-size:28px;
+    width:152px;
+  }
 `;
 
 //
@@ -57,6 +79,15 @@ transform: translateX(-50%);
 font-size: 40px;
 color:white;
 opacity:0;
+@media all and (min-width:480px) and (max-width:767px) {
+  font-size: 35px;
+}
+@media all and (max-width:479px) {
+  position: absolute;
+  top: 380px; 
+  left:52%;
+  font-size:28px;
+  width:202px;
 }
 `;
 

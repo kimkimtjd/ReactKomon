@@ -15,6 +15,7 @@ const Mainimg = styled.img`
   left: 0px; 
   width:100%;
   height:100%;
+  
 `;
 
 //콘텐츠영역
@@ -29,6 +30,15 @@ const Content = styled.div`
   height:500px;
   background-color:white;
   box-shadow: 40px 40px 40px red;
+  @media all and (min-width:768px) and (max-width:1024px) {
+    width:700px;
+  }
+  @media all and (min-width:480px) and (max-width:767px) {
+    width:400px;
+  }
+  @media all and (max-width:479px) {
+    width:300px;
+  }
 `;
 
 
@@ -42,6 +52,27 @@ const Intro = styled.p`
   font-weight:400;
   font-size:25px;
   font-weight:500;
+  @media all and (min-width:768px) and (max-width:1024px) {
+    position: absolute;
+    top: 120px; 
+    left:250px;
+    width:400px;
+    font-size:20px;
+  }
+  @media all and (min-width:480px) and (max-width:767px) {
+    position: absolute;
+    top: 120px; 
+    left:200px;
+    width:200px;
+    font-size:15px;
+  }
+  @media all and (max-width:479px) {
+    position: absolute;
+    top: 120px; 
+    left:150px;
+    width:130px;
+    font-size:12px;
+  }
 `;
 
 //프로필
@@ -55,6 +86,22 @@ const Profil = styled.ul`
   li{
       list-style:none;
   }
+  @media all and (min-width:768px) and (max-width:1024px) {
+    width:700px;
+  }
+  @media all and (min-width:480px) and (max-width:767px) {
+    position: absolute;
+    top: 380px; 
+    left:0px;
+    width:550px;
+    font-size:15px;
+  }
+  @media all and (max-width:479px) {
+    position: absolute;
+    top: 350px; 
+    left:-30px;
+    font-size:10px;
+  }
 `;
 
 //프로필이미지
@@ -65,6 +112,17 @@ const Profilimg = styled.img`
   width:200px;
   height:250px;
   border-radius:50%;
+  @media all and (min-width:480px) and (max-width:767px) {
+    width:150px;
+    height:200px
+  }
+  @media all and (max-width:479px) {
+    position: absolute;
+    top: 150px; 
+    left:20px; 
+    width:100px;
+    height:150px
+  }
 `;
 
 

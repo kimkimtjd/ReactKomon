@@ -38,6 +38,24 @@ const Skills = styled.button`
     position: absolute;
     top: -20px; 
   }
+  @media all and (min-width:768px) and (max-width:1024px) {
+    position: absolute;
+    top: 0px; 
+    left:570px;
+    font-size:30px;
+  }
+  @media all and (min-width:480px) and (max-width:767px) {
+    position: absolute;
+    top: 0px; 
+    left:550px;
+    font-size:20px;
+    }
+  @media all and (max-width:479px) {
+    position: absolute;
+    top: 0px; 
+    left:555px;
+    font-size:15px;
+    }
 `;
 
 //Front
@@ -47,6 +65,24 @@ const Front = styled.div`
   left:50px;
   width:200px;
   font-size:28px;
+  @media all and (min-width:768px) and (max-width:1024px) {
+    width:150px;
+    font-size:25px;
+  }
+  @media all and (min-width:480px) and (max-width:767px) {
+    position: absolute;
+    top:0px; 
+    left:40px;
+    width:150px;
+    font-size:25px
+  }
+  @media all and (max-width:479px) {
+    position: absolute;
+    top:0px; 
+    left:40px;
+    width:200px;
+    font-size:20px
+    }
 `;
 
 //Front Language
@@ -55,6 +91,20 @@ const Frontp = styled.p`
   top:65px; 
   left:-20px;
   font-size:20px;
+  @media all and (min-width:768px) and (max-width:1024px) {
+    position: absolute;
+    top:65px; 
+    left:-10px;
+    width:150px;
+    font-size:18px;
+  }
+  @media all and (max-width:479px) {
+    position: absolute;
+    top:55px; 
+    left:-20px;
+    width:180px;
+    font-size:15px;
+    }
 `;
 
 //Back
@@ -64,6 +114,27 @@ const Back = styled.div`
   left:330px;
   width:200px;
   font-size:28px;
+  @media all and (min-width:768px) and (max-width:1024px) {
+    position: absolute;
+    top:20px; 
+    left:260px;
+    width:150px;
+    font-size:25px;
+  }
+  @media all and (min-width:480px) and (max-width:767px) {
+    position: absolute;
+    top:0px; 
+    left:230px;
+    width:150px;
+    font-size:25px;
+  }
+  @media all and (max-width:479px) {
+    position: absolute;
+    top:200px; 
+    left:40px;
+    width:200px;
+    font-size:20px
+    }
 `;
 
 //DateBase
@@ -73,6 +144,27 @@ const DateBase = styled.div`
   left:330px;
   width:200px;
   font-size:28px;
+  @media all and (min-width:768px) and (max-width:1024px) {
+    position: absolute;
+    top:190px; 
+    left:260px;
+    width:150px;
+    font-size:25px;
+  }
+  @media all and (min-width:480px) and (max-width:767px) {
+    position: absolute;
+    top:170px; 
+    left:240px;
+    width:150px;
+    font-size:25px;
+  }
+  @media all and (max-width:479px) {
+    position: absolute;
+    top:330px; 
+    left:40px;
+    width:200px;
+    font-size:20px
+  }
 `;
 
 //Etc
@@ -82,6 +174,27 @@ const Etc = styled.div`
   left:600px;
   width:200px;
   font-size:28px;
+  @media all and (min-width:768px) and (max-width:1024px) {
+    position: absolute;
+    top:110px; 
+    left:460px;
+    width:150px;
+    font-size:25px;
+  }
+  @media all and (min-width:480px) and (max-width:767px) {
+    position: absolute;
+    top:300px; 
+    left:170px;
+    width:150px;
+    font-size:25px;
+  }
+  @media all and (max-width:479px) {
+    position: absolute;
+    top:430px; 
+    left:40px;
+    width:200px;
+    font-size:20px
+  }
 `;
 
 const X = styled.button`
@@ -93,6 +206,22 @@ const X = styled.button`
   font-size:32px;
   font-weight:600;
   cursor:pointer;
+  @media all and (min-width:768px) and (max-width:1024px) {
+    position: absolute;
+    top: 20px; 
+    left:580px;
+  }
+  @media all and (min-width:480px) and (max-width:767px) {
+    position: absolute;
+    top: 20px; 
+    left:380px;
+  }
+  @media all and (max-width:479px) {
+    position: absolute;
+    top:10px; 
+    left:200px;
+    font-size:22px;
+    }
 `;
 
 function Skill() {
